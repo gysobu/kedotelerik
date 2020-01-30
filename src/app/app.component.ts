@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { products } from './products';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'telerikgridproj';
+  title = 'Hello World';
+
+  public gridData: any[] = products;
+onButtonClick() {
+  this.title = 'Hello from kendo UI';
+}
 }
